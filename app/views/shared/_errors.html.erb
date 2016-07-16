@@ -1,0 +1,18 @@
+<% if object.errors.any? %>
+  <% if object.errors.messages[:password] == ["is not valid"] || object.errors.messages[:email] == ["is not valid"] %>
+    <div class="panel panel-heading panel-warning errors">
+      <h5><i class="glyphicon glyphicon-exclamation-sign"></i> Incorrect email or password</h5>
+    </div>
+  <% else %>
+    <div class="panel panel-warning errors">
+      <div class="panel-heading">
+        <h5><i class="glyphicon glyphicon-exclamation-sign"></i> Found errors while saving</h5>
+      </div>
+      <ul class="panel-body"> 
+        <% object.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>
