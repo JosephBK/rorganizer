@@ -6,9 +6,34 @@
 		</tr>
 		<tr> 
 			<td colspan="2">
-				<a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-plus"></span> Add course</a>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#AddCourse">
+					<span class="glyphicon glyphicon-plus"></span> Add course
+				</button>
 			</td>
 		</tr>
 	</tbody>
 </table>
 
+<div class="modal" id="AddCourse" role="dialog" aria-labelledby="AddCourselabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="AddCourselabel">Add Course</h4>
+
+			</div>
+			<div class="modal-body">
+				<%= simple_form_for @course do |f| %>
+				    <%= f.input :name %>
+				    <%= f.input :status %>
+				    <%= f.input :description %>
+				    <%= f.input :limit %>
+				    <%= f.input :start_date %>
+					<br />  
+					<%= f.submit 'Create' %>
+				<% end %>	  
+			</div>
+
+		</div>
+	</div> 
+	
+</div>
