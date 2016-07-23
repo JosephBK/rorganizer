@@ -2,6 +2,7 @@ class DashboardsController < ApplicationController
 
   def index
     check_user 
+    @courses = Course.all
   end
 
   private

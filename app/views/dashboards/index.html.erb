@@ -3,6 +3,13 @@
   <h1>Welcome!</h1>
   <p>This is your Dashboard.</p>
   <p>
+  <% @courses.each do |course|%>
+   <p><%= course.name %>
+     <%= course.description %>
+   <br />  
+     <%= course.status %>
+   </p> 
+   <%end%>
     
   </p>
 </div>
