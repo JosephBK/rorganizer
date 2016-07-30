@@ -1,28 +1,32 @@
-== README
+== Installation guide
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+These instructions will show you how to install and run a local instance of Rorganizer.
 
-Things you may want to cover:
+1. Install Ruby on Rails version 4.2.5 or higher. See, e.g. http://guides.rubyonrails.org/getting_started.html#installing-rails
 
-* Ruby version
+2. Open a terminal and go to the directory where you want to install the app.
 
-* System dependencies
+3. Clone the repository with
 
-* Configuration
+     git clone https://github.com/JosephBK/rorganizer.git
 
-* Database creation
+4. Switch to the rorganizer directory.
 
-* Database initialization
+5. Run
 
-* How to run the test suite
+     bundle install 
 
-* Services (job queues, cache servers, search engines, etc.)
+   to install the required gems.
 
-* Deployment instructions
+6. Run
 
-* ...
+     rake db:migrate
 
+   to set up the database.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+7. Start the server with 
+
+     rails server
+
+8. Navigate to http://localhost:3000 in your browser to use the application.  
+

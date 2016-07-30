@@ -1,0 +1,17 @@
+Sat, 30 Jul 2016 15:12:04 +0200
+README.rdoc	Sat, 30 Jul 2016 15:12:00 +0200
+app/controllers/admin_controller.rb	Mon, 25 Jul 2016 14:01:37 +0200
+app/controllers/application_controller.rb	Thu, 14 Jul 2016 09:20:30 +0200
+app/controllers/courses_controller.rb	Sat, 23 Jul 2016 15:53:07 +0200
+app/controllers/dashboards_controller.rb	Sat, 23 Jul 2016 15:54:40 +0200
+app/controllers/user_sessions_controller.rb	Sat, 16 Jul 2016 15:38:02 +0200
+app/controllers/users_controller.rb	Mon, 11 Jul 2016 22:23:12 +0200
+app/helpers/admin_helper.rb	Sat, 23 Jul 2016 16:12:56 +0200
+app/helpers/application_helper.rb	Sat, 09 Jul 2016 16:04:01 +0200
+app/helpers/courses_helper.rb	Sat, 23 Jul 2016 15:04:02 +0200
+app/helpers/dashboards_helper.rb	Sat, 09 Jul 2016 16:55:15 +0200
+app/helpers/user_sessions_helper.rb	Mon, 11 Jul 2016 20:25:26 +0200
+app/helpers/users_helper.rb	Sat, 09 Jul 2016 17:41:47 +0200
+app/models/course.rb	Sat, 23 Jul 2016 15:04:02 +0200
+app/models/user.rb	Sat, 23 Jul 2016 16:38:48 +0200
+app/models/user_session.rb	Mon, 11 Jul 2016 20:18:06 +0200
