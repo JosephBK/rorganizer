@@ -76,6 +76,14 @@ Rorganizer.</p>
 <p>Install Ruby on Rails version 4.2.5 or higher. See, e.g. <a
 href="http://guides.rubyonrails.org/getting_started.html#installing-rails">guides.rubyonrails.org/getting_started.html#installing-rails</a></p>
 </li><li>
+<p>Install postgresql. See, e.g. <a
+href="https://www.postgresql.org/download">www.postgresql.org/download</a>/</p>
+</li><li>
+<p>Open the postgres console as the administrator and run</p>
+
+<pre>create role rorganize password &#39;password&#39; login;
+create database rorganizer_development owner rorganize;</pre>
+</li><li>
 <p>Open a terminal and go to the directory where you want to install the app.</p>
 </li><li>
 <p>Clone the repository with</p>

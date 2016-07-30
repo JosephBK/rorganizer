@@ -4,9 +4,16 @@ These instructions will show you how to install and run a local instance of Rorg
 
 1. Install Ruby on Rails version 4.2.5 or higher. See, e.g. http://guides.rubyonrails.org/getting_started.html#installing-rails
 
-2. Open a terminal and go to the directory where you want to install the app.
+2. Install postgresql. See, e.g. https://www.postgresql.org/download/
 
-3. Clone the repository with
+3. Open the postgres console as the administrator and run 
+
+      create role rorganize password 'password' login;
+      create database rorganizer_development owner rorganize;
+      
+4. Open a terminal and go to the directory where you want to install the app.
+
+5. Clone the repository with
 
      git clone https://github.com/JosephBK/rorganizer.git
 
