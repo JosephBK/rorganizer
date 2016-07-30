@@ -12,4 +12,6 @@ Rorganizer was created to tackle he fragmentation across multiple documents and 
 
 To see Installation instructions, see README.rdoc
 
+To see App go to https://rorganizer.herokuapp.com/
+
 This a Refugees on Rails Munich project.
